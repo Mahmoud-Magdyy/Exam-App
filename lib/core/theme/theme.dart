@@ -33,7 +33,7 @@ ThemeData getAppTheme(){
         bodySmall:   GoogleFonts.roboto(
                                 color: AppColors.white,
                                 fontWeight: FontWeight.w400,
-                                fontSize: 10,
+                                fontSize: 12,
                                 
                               ),                   
                              

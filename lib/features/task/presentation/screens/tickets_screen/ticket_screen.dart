@@ -14,6 +14,7 @@ class TicketScreen extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
+          backgroundColor: AppColors.background,
           title: const Text(AppStrings.myTicket),
           centerTitle: true,
         ),

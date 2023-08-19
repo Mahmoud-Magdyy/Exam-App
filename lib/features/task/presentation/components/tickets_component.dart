@@ -3,6 +3,8 @@ import 'package:exam_app/core/app_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../screens/view_ticket/view_ticket.dart';
+
 class TicketsComponent extends StatelessWidget {
    const TicketsComponent({super.key, required this.poster, required this.title, required this.time, required this.car});
   final String poster;
@@ -91,7 +93,9 @@ class TicketsComponent extends StatelessWidget {
                 SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(context, MaterialPageRoute(builder:(context) => const ViewTicket(), ));
+                      },
                       child: const Text(AppStrings.viewTicket)),
                 )
               ],

@@ -20,6 +20,21 @@ class AppStrings{
   static const String upcoming='Upcoming ';
   static const String encanto='Encanto ';
   static const String uncharted='Uncharted ';
+  static const String movie='Movie: ';
+  static const String name='Name';
+  static const String ahmed='Ahmed Abaza';
+  static const String seats='seats';
+  static const String subSeats='G5, G6, G7, G8 ';
+  static const String date='Date';
+  static const String subDate='20 Feb 2022';
+  static const String time='Time';
+  static const String subTime='9:00pm';
+  static const String nb='NP Order';
+  static const String subNb='7283603745';
+  static const String price='Price';
+  static const String subPrice='150 EGP';
+
+ 
   
 
 }
