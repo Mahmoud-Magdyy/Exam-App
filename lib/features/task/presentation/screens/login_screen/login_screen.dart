@@ -1,4 +1,5 @@
 import 'package:exam_app/core/app_color.dart';
+import 'package:exam_app/features/task/presentation/screens/tickets_screen/ticket_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -77,13 +78,13 @@ class LoginScreen extends StatelessWidget {
                           alignment: Alignment.bottomLeft,
                           child: InkWell(
                             onTap: () {},
-                            child: Text(
-                              AppStrings.forgetPassword,
-                              style: Theme.of(context)
-                                  .textTheme
-                                  .displaySmall!.copyWith(decoration: TextDecoration.underline,fontSize: 9)
-                                  
-                            ),
+                            child: Text(AppStrings.forgetPassword,
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .displaySmall!
+                                    .copyWith(
+                                        decoration: TextDecoration.underline,
+                                        fontSize: 9)),
                           ),
                         )
                       ],
@@ -96,7 +97,14 @@ class LoginScreen extends StatelessWidget {
                       height: 47.h,
                       width: 252.w,
                       child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const TicketScreen(),
+                              ),
+                            );
+                          },
                           child: const Text(AppStrings.login)),
                     ),
                     SizedBox(
@@ -162,13 +170,18 @@ class LoginScreen extends StatelessWidget {
                         )
                       ],
                     ),
-                    SizedBox(height: 20.h,),
+                    SizedBox(
+                      height: 20.h,
+                    ),
                     //! guest
                     InkWell(
                       onTap: () {},
                       child: Text(
                         AppStrings.enterGuest,
-                        style: Theme.of(context).textTheme.displaySmall!.copyWith(decoration: TextDecoration.underline),
+                        style: Theme.of(context)
+                            .textTheme
+                            .displaySmall!
+                            .copyWith(decoration: TextDecoration.underline),
                       ),
                     ),
                   ],
