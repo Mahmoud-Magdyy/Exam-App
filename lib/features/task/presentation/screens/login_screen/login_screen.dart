@@ -20,6 +20,7 @@ class LoginScreen extends StatelessWidget {
               SingleChildScrollView(
                 child: Column(
                   children: [
+                    //!logo
                     Image.asset(
                       AppAssets.logo,
                       height: 83.h,
@@ -32,6 +33,7 @@ class LoginScreen extends StatelessWidget {
                     SizedBox(
                       height: 33.h,
                     ),
+                    //! text login
                     Text(
                       AppStrings.login,
                       style: Theme.of(context)
@@ -42,6 +44,7 @@ class LoginScreen extends StatelessWidget {
                     SizedBox(
                       height: 46.h,
                     ),
+                    //!text field email
                     SizedBox(
                       height: 48.h,
                       width: 279.w,
@@ -54,7 +57,7 @@ class LoginScreen extends StatelessWidget {
                     SizedBox(
                       height: 50.h,
                     ),
-                    //! password
+                    //!//!text field password
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -160,6 +163,7 @@ class LoginScreen extends StatelessWidget {
                       ],
                     ),
                     SizedBox(height: 20.h,),
+                    //! guest
                     InkWell(
                       onTap: () {},
                       child: Text(

@@ -11,7 +11,7 @@ ThemeData getAppTheme(){
         displayLarge: GoogleFonts.salsa(
           color: AppColors.white,
           fontWeight: FontWeight.w400,
-          fontSize: 25,
+          fontSize: 33,
         ),
         displayMedium: GoogleFonts.salsa(
           color: AppColors.white,
@@ -22,7 +22,20 @@ ThemeData getAppTheme(){
                                 color: AppColors.red,
                                 fontWeight: FontWeight.w400,
                                 fontSize: 15,
+                                
                               ),
+        bodyMedium:   GoogleFonts.roboto(
+                                color: AppColors.white,
+                                fontWeight: FontWeight.w400,
+                                fontSize: 20,
+                                
+                              ),                   
+        bodySmall:   GoogleFonts.roboto(
+                                color: AppColors.white,
+                                fontWeight: FontWeight.w400,
+                                fontSize: 10,
+                                
+                              ),                   
                              
       ),
       inputDecorationTheme: InputDecorationTheme(
